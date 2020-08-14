@@ -1,7 +1,7 @@
-function play( track ) {
-	var controls = document.getElementById( "controls" );
-	var controlsSource = document.getElementById( "controls source" );
-	var playing = document.getElementById( "playing" );
+function play(track) {
+	var controls = document.getElementById("controls");
+	var controlsSource = document.getElementById("controls source");
+	var playing = document.getElementById("playing");
 	playing.innerHTML = "Now Playing: " + track;
 	controlsSource.src = "./Music/" + track + ".mp3";
 	controls.load();

@@ -1,66 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<title>Akshay R. Kapadia | Music</title>
+	</head>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Akshay R. Kapadia | Music</title>
-  </head>
+	<body style="background-color: black; height: 100%;">
+		<!--<div class="jumbotron jumbotron-fluid" style="background-color: #282828; color: white;">-->
+		<!-- <div class="container">-->
+		<!--<h1 class="display-4">Akshay R. Kapadia</h1>-->
+		<!-- <p class="lead">Music</p> -->
+		<!--</div>-->
+		<!-- </div> -->
+		<!--<ul class="nav">-->
+		<!--<li class="nav-item">-->
+		<!--<a class="nav-link active" id="new release nav" onclick="toggleNewRelease()">New Release</a>-->
+		<!--</li>-->
+		<!--<li class="nav-item">-->
+		<!-- <a class="nav-link active" id="discography nav" onclick="toggleDiscography()">Discography</a>-->
+		<!--</li>-->
+		<!--</ul> -->
+		<div
+			id="discography"
+			style="
+				display: block;
+				padding-left: 2.5%;
+				padding-right: 2.5%;
+				padding-top: 1%;
+				padding-bottom: 1%;
+			"
+		>
+			<div
+				class="card mb-3"
+				style="
+					max-width: 95vw;
+					background-color: #282828;
+					color: white;
+				"
+			>
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<img
+							src="./Images/Dark Presence.png"
+							class="card-img"
+						/>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Dark Presence</h5>
+							<p class="card-text">Akshay R. Kapadia</p>
+							<p class="card-text">
+								<small class="text-muted"
+									>August 12, 2020</small
+								>
+							</p>
+							<div class="list-group">
+								<a
+									class="list-group-item list-group-item"
+									style="background-color: #1b1c1b;"
+									onclick="play('Third Eye');"
+									><span class="badge badge-dark badge-pill"
+										>1.</span
+									>
+									Third Eye</a
+								>
+								<a
+									class="list-group-item list-group-item"
+									style="background-color: #1b1c1b;"
+									onclick="play('Dark Presence');"
+									><span class="badge badge-dark badge-pill"
+										>2.</span
+									>
+									Dark Presence</a
+								>
+							</div>
+							<br />
+							<a
+								class="btn btn-primary"
+								href="./Music/Dark Presence.zip"
+								download="Dark Presence"
+								>Download</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <body style="background-color: black; height: 100%;">
-    <!--<div class="jumbotron jumbotron-fluid" style="background-color: #282828; color: white;">-->
-    <!-- <div class="container">-->
-    <!--<h1 class="display-4">Akshay R. Kapadia</h1>-->
-    <!-- <p class="lead">Music</p> -->
-    <!--</div>-->
-    <!-- </div> -->
-    <!--<ul class="nav">-->
-    <!--<li class="nav-item">-->
-    <!--<a class="nav-link active" id="new release nav" onclick="toggleNewRelease()">New Release</a>-->
-    <!--</li>-->
-    <!--<li class="nav-item">-->
-    <!-- <a class="nav-link active" id="discography nav" onclick="toggleDiscography()">Discography</a>-->
-    <!--</li>-->
-    <!--</ul> -->
-    <div id="discography" style="display: block; padding-left: 2.5%; padding-right: 2.5%; padding-top: 1%; padding-bottom: 1%;">
-      <div class="card mb-3" style="max-width: 95vw; background-color: #282828; color: white;">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="./Images/Dark Presence.png" class="card-img">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Dark Presence</h5>
-              <p class="card-text">Akshay R. Kapadia</p>
-              <p class="card-text"><small class="text-muted">August 12, 2020</small></p>
-              <div class="list-group">
-                <a class="list-group-item list-group-item" style="background-color: #1b1c1b;" onclick="play('Third Eye');"><span class="badge badge-dark badge-pill">1.</span> Third Eye</a>
-                <a class="list-group-item list-group-item" style="background-color: #1b1c1b;" onclick="play('Dark Presence');"><span class="badge badge-dark badge-pill">2.</span> Dark Presence</a>
-              </div>
-              <br>
-              <a class="btn btn-primary" href="./Music/Dark Presence.zip" download="Dark Presence">Download</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+		<!--<div id="new release" style="display: none;">-->
+		<!--<h1>New Release</h1>-->
+		<!--</div>-->
 
-    <!--<div id="new release" style="display: none;">-->
-    <!--<h1>New Release</h1>-->
-    <!--</div>-->
+		<div
+			style="
+				position: sticky;
+				bottom: 0;
+				width: 100%;
+				left: 50%;
+				padding-bottom: 10px;
+				padding-top: 20px;
+				padding-left: 2.5%;
+				padding-right: 2.5%;
+				background-color: black;
+			"
+		>
+			<h5 id="playing" style="color: white;">Now Playing: Third Eye</h5>
+			<audio controls id="controls" style="width: 100%;">
+				<source
+					id="controls source"
+					src="./Music/Third Eye.mp3"
+					type="audio/mpeg"
+				/>
+			</audio>
+		</div>
 
-    <div style="position: sticky; bottom: 0; width: 100%; left: 50%; padding-bottom: 10px; padding-top: 20px; padding-left: 2.5%; padding-right: 2.5%; background-color: black;">
-      <h5 id="playing" style="color: white;">Now Playing: Third Eye</h5>
-      <audio controls id="controls" style="width: 100%;">
-        <source id="controls source" src="./Music/Third Eye.mp3" type="audio/mpeg">
-      </audio>
-    </div>
-
-    <script src="./main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-  </body>
-  <html>
+		<script src="./main.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+	</body>
+	<html></html>
+</html>
