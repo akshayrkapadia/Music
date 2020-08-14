@@ -7,54 +7,48 @@
                 <title>Akshay R. Kapadia | Music</title>
         </head>
         <body style="background-color: black;">
-                <!--<div class="jumbotron jumbotron-fluid">-->
+                <!--<div class="jumbotron jumbotron-fluid" style="background-color: #282828; color: white;">-->
                         <!--<div class="container">-->
                                 <!--<h1 class="display-4">Akshay R. Kapadia</h1>-->
                                 <!--<p class="lead">Music</p>-->
                         <!--</div>-->
                 <!--</div>-->
-                <div class="card mb-3" style="max-width: 95%; top: 20px; left: 50px; background-color: #282828; color: white;">
-                        <div class="row no-gutters">
-                                <div class="col-md-4">
-                                        <img src="./Images/Dark Presence.png" class="card-img">
-                                </div>
-                                <div class="col-md-8">
-                                        <div class="card-body">
-                                                <h5 class="card-title">Dark Presence</h5>
-                                                <p class="card-text">Akshay R. Kapadia</p>
-                                                <p class="card-text"><small class="text-muted">August 12, 2020</small></p>
-                                                <ul class="list-group" style="width: 500px;">
-                                                        <li class="list-group-item list-group-item-action">1. <a onclick="toggle(this.innerHTML);">Third Eye</a></li>
-                                                        <li class="list-group-item list-group-item-action">2. <a onclick="toggle(this.innerHTML);">Dark Presence</a></li>
-                                                </ul>
-                                                <br>
-                                                <a class="btn btn-primary" href="./Music/Dark Presence.zip" download="Dark Presence">Download</a>
+                <!--<ul class="nav">-->
+                        <!--<li class="nav-item">-->
+                                <!--<a class="nav-link active" id="new release nav" onclick="toggleNewRelease()">New Release</a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                                <!--<a class="nav-link active" id="discography nav" onclick="toggleDiscography()">Discography</a>-->
+                        <!--</li>-->
+                <!--</ul>-->
+                <div id="discography" style="display: block;">
+                        <div class="card mb-3" style="max-width: 95vw; top: 20px; left: 50px; background-color: #282828; color: white;">
+                                <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                                <img src="./Images/Dark Presence.png" class="card-img">
                                         </div>
-                                </div>
-                        </div>
-                </div>
-                <div class="card mb-3" style="max-width: 95%; top: 20px; left: 50px; background-color: #282828; color: white;">
-                        <div class="row no-gutters">
-                                <div class="col-md-4">
-                                        <img src="./Images/Dark Presence.png" class="card-img">
-                                </div>
-                                <div class="col-md-8">
-                                        <div class="card-body">
-                                                <h5 class="card-title">Dark Presence</h5>
-                                                <p class="card-text">Akshay R. Kapadia</p>
-                                                <p class="card-text"><small class="text-muted">August 12, 2020</small></p>
-                                                <ul class="list-group" style="width: 500px;">
-                                                        <li class="list-group-item list-group-item-action">1. <a onclick="toggle(this.innerHTML);">Third Eye</a></li>
-                                                        <li class="list-group-item list-group-item-action">2. <a onclick="toggle(this.innerHTML);">Dark Presence</a></li>
-                                                </ul>
-                                                <br>
-                                                <a class="btn btn-primary" href="./Music/Dark Presence.zip" download="Dark Presence">Download</a>
+                                        <div class="col-md-8">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Dark Presence</h5>
+                                                        <p class="card-text">Akshay R. Kapadia</p>
+                                                        <p class="card-text"><small class="text-muted">August 12, 2020</small></p>
+                                                        <ul class="list-group">
+                                                                <li class="list-group-item list-group-item-action">1. <a onclick="play(this.innerHTML);">Third Eye</a></li>
+                                                                <li class="list-group-item list-group-item-action">2. <a onclick="play(this.innerHTML);">Dark Presence</a></li>
+                                                        </ul>
+                                                        <br>
+                                                        <a class="btn btn-primary" href="./Music/Dark Presence.zip" download="Dark Presence">Download</a>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
                 </div>
 
-                <div style="position: sticky; bottom: 0; width: 95%; left: 50px; padding-bottom: 10px; padding-top: 20px; background-color: black;">
+                <!--<div id="new release" style="display: none;">-->
+                        <!--<h1>New Release</h1>-->
+                <!--</div>-->
+
+                <div style="position: sticky; bottom: 0; width: 95vw; left: 50px; padding-bottom: 10px; padding-top: 20px; background-color: black;">
                         <h5 id="playing" style="color: white; padding-left: 10px;">Now Playing: Third Eye</h5>
                         <audio controls id="controls" style="left: 50px; width: 100%;">
                                 <source id="controls source" src="./Music/Third Eye.mp3" type="audio/mpeg">
