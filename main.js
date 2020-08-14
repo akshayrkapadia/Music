@@ -1,18 +1,18 @@
+audioController = {
+	controls: document.getElementById("controls"),
+	controlsSource: document.getElementById("controls source"),
+	playing: document.getElementById("playing"),
+};
+
 function play(track) {
-	audioController = getAudioController();
-	audioController["playing"].innerHTML = "Now Playing: " + track;
-	audioController["controlsSource"].src = "./Music/" + track + ".mp3";
-	audioController["controls"].load();
+	updateTrack(track);
 	audioController["controls"].play();
 }
 
-function getAudioController() {
-	audioController = {
-		controls: document.getElementById("controls"),
-		controlsSource: document.getElementById("controls source"),
-		playing: document.getElementById("playing"),
-	};
-	return audioController;
+function updateTrack(track) {
+	audioController["playing"].innerHTML = "Now Playing: " + track;
+	audioController["controlsSource"].src = "./Music/" + track + ".mp3";
+	audioController["controls"].load();
 }
 
 //function toggleNewRelease() {
