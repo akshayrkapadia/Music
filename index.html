@@ -10,20 +10,25 @@
 </head>
 
 <body style="background-color: black; height: 100%;">
-	<!--<div class="jumbotron jumbotron-fluid" style="background-color: #282828; color: white;">-->
-	<!-- <div class="container">-->
-	<!--<h1 class="display-4">Akshay R. Kapadia</h1>-->
-	<!-- <p class="lead">Music</p> -->
-	<!--</div>-->
-	<!-- </div> -->
-	<!--<ul class="nav">-->
-	<!--<li class="nav-item">-->
-	<!--<a class="nav-link active" id="new release nav" onclick="toggleNewRelease()">New Release</a>-->
-	<!--</li>-->
-	<!--<li class="nav-item">-->
-	<!-- <a class="nav-link active" id="discography nav" onclick="toggleDiscography()">Discography</a>-->
-	<!--</li>-->
-	<!--</ul> -->
+
+	<div class="jumbotron jumbotron-fluid"
+		style="background-image: url(./Images/Background.jpg); background-size: cover; color: white; filter: brightness(50%);">
+		<div class="container" style="color:darkgray;">
+			<center>
+				<h1 class="display-4">Akshay R. Kapadia</h1>
+				<h5>Music</h5>
+			</center>
+		</div>
+	</div>
+	<!-- <ul class="nav">
+		<li class="nav-item">
+			<a class="nav-link active" id="new release nav" onclick="toggleNewRelease()">New Release</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" id="discography nav" onclick="toggleDiscography()">Discography</a>
+		</li>
+	</ul> -->
+
 	<div id="discography" style="
 				display: block;
 				padding-left: 2.5%;
@@ -63,11 +68,11 @@
 								onclick="play('Dark Presence');"><span class="badge badge-dark badge-pill">2.</span>
 								Dark Presence</a>
 						</div>
-						<br>
+						<!-- <br>
 						<div>
 							<a class="btn btn-primary disabled" href="./Music/Dark Presence.zip"
 								download="Dark Presence">Download</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -87,9 +92,12 @@
 				padding-top: 20px;
 				padding-left: 2.5%;
 				padding-right: 2.5%;
-				background-color: black;
+				background-color:black;
+				color: white;
+				filter: brightness(75%);
+				filter:opacity(80%)
 			">
-		<h5 id="playing" style="color: white;">Now Playing: Third Eye</h5>
+		<h5 id="playing">Now Playing: Third Eye</h5>
 		<audio controls id="controls" style="width: 100%;">
 			<source id="controls source" src="./Music/Third Eye.mp3" type="audio/mpeg" />
 		</audio>
